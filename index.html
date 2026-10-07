@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clinica Dental San Martin | Odontologia Integral y Estetica</title>
+  <meta name="description" content="Atencion odontologica especializada, diseno de sonrisa, implantes y ortodoncia. Agenda tu cita de valoracion hoy mismo.">
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#f0fdfa',
+              100: '#ccfbf1',
+              500: '#14b8a6',
+              600: '#0d9488',
+              700: '#0f766e',
+              800: '#115e59',
+              900: '#134e4a',
+            },
+            accent: {
+              500: '#2563eb',
+              600: '#1d4ed8',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    @keyframes pulse-subtle {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+    }
+    .pulse-btn {
+      animation: pulse-subtle 2.5s infinite ease-in-out;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased font-sans">
+
+  <!-- Top Notification Bar -->
+  <div class="bg-brand-900 text-white text-xs sm:text-sm py-2 px-4 text-center font-medium">
+    <div class="max-w-7xl mx-auto flex items-center justify-center gap-2">
+      <span class="inline-block w-2 h-2 rounded-full bg-emerald-400"></span>
+      <span>Campaña Especial: Diagnostico Clinico Digital con 50% de Descuento este mes.</span>
+      <a href="#contacto" class="underline hover:text-emerald-300 ml-1 font-semibold">Agendar Ahora</a>
+    </div>
+  </div>
+
+  <!-- Navigation Header -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-brand-600 flex items-center justify-center text-white shadow-md shadow-brand-500/20">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+          </svg>
+        </div>
+        <div>
+          <span class="text-xl font-extrabold tracking-tight text-slate-900 block leading-tight">San Martin</span>
+          <span class="text-xs font-semibold text-brand-600 uppercase tracking-wider block">Clinica Odontologica</span>
+        </div>
+      </div>
+
+      <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-600">
+        <a href="#servicios" class="hover:text-brand-600 transition">Tratamientos</a>
+        <a href="#ventajas" class="hover:text-brand-600 transition">Por Que Elegirnos</a>
+        <a href="#testimonios" class="hover:text-brand-600 transition">Opiniones</a>
+        <a href="#ubicacion" class="hover:text-brand-600 transition">Ubicacion y Horarios</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <a href="#contacto" class="hidden sm:inline-flex items-center gap-2 bg-brand-600 hover:bg-brand-700 text-white font-bold text-sm px-5 py-2.5 rounded-xl shadow-md shadow-brand-600/20 transition-all hover:shadow-lg">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+          </svg>
+          <span>Agendar Cita</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative overflow-hidden bg-gradient-to-b from-brand-50/60 to-white py-16 sm:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-brand-100 text-brand-800 text-xs font-bold uppercase tracking-wider">
+            <span class="w-2 h-2 rounded-full bg-brand-600"></span>
+            Tecnologia Digital Sin Dolor
+          </div>
+
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-[1.15]">
+            Tu Sonrisa Ideal con Atención Médica de <span class="text-brand-600">Primer Nivel</span>
+          </h1>
+
+          <p class="text-lg text-slate-600 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+            Especialistas certificados en implantologia, ortodoncia invisible y diseno de sonrisa. Atencion personalizada, presupuestos claros y la tecnologia mas avanzada para cuidar tu salud bucal sin molestias.
+          </p>
+
+          <!-- Action buttons -->
+          <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+            <a href="https://wa.me/59170000000?text=Hola%2C%20quisiera%20solicitar%20informacion%20para%20una%20cita%20de%20valoracion" target="_blank" rel="noopener" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-8 py-4 rounded-xl text-base shadow-lg shadow-emerald-600/30 transition transform hover:-translate-y-0.5">
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+              </svg>
+              <span>Consultar por WhatsApp</span>
+            </a>
+            <a href="#servicios" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white hover:bg-slate-100 text-slate-800 font-bold px-7 py-4 rounded-xl text-base border border-slate-300 transition">
+              <span>Ver Tratamientos</span>
+              <svg class="w-4 h-4 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Trust Badges -->
+          <div class="pt-6 border-t border-slate-200/80 grid grid-cols-3 gap-4 text-center lg:text-left">
+            <div>
+              <p class="text-2xl font-extrabold text-slate-900">+1,800</p>
+              <p class="text-xs text-slate-500 font-medium">Pacientes Satisfechos</p>
+            </div>
+            <div>
+              <p class="text-2xl font-extrabold text-slate-900">12 Años</p>
+              <p class="text-xs text-slate-500 font-medium">Experiencia Medica</p>
+            </div>
+            <div>
+              <p class="text-2xl font-extrabold text-slate-900">4.9 / 5.0</p>
+              <p class="text-xs text-slate-500 font-medium">Valoracion en Google</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Card / Interactive Appointment Preview -->
+        <div class="lg:col-span-5">
+          <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-xl border border-slate-100 relative">
+            <div class="absolute -top-3 right-6 bg-brand-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-sm">
+              Agenda Rapida
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-2">Solicitar Diagnostico</h3>
+            <p class="text-xs text-slate-500 mb-6">Completa tus datos y recibiras confirmacion inmediata en tu WhatsApp.</p>
+
+            <form id="heroLeadForm" class="space-y-4" onsubmit="event.preventDefault(); submitLeadForm();">
+              <div>
+                <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Nombre Completo</label>
+                <input type="text" id="leadName" required placeholder="Ej. Carlos Mendoza" class="w-full px-4 py-3 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 bg-slate-50">
+              </div>
+
+              <div>
+                <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Numero de WhatsApp</label>
+                <input type="tel" id="leadPhone" required placeholder="Ej. 70012345" class="w-full px-4 py-3 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 bg-slate-50">
+              </div>
+
+              <div>
+                <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Tratamiento de Interes</label>
+                <select id="leadService" class="w-full px-4 py-3 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 bg-slate-50 font-medium">
+                  <option value="Limpieza y Diagnostico">Limpieza Dental y Diagnostico</option>
+                  <option value="Ortodoncia y Brackets">Ortodoncia / Brackets / Alineadores</option>
+                  <option value="Implantes Dentales">Implantes y Protesis Dentales</option>
+                  <option value="Blanqueamiento Dental">Blanqueamiento y Diseno de Sonrisa</option>
+                  <option value="Urgencia Dental">Urgencia Dental / Dolor Agudo</option>
+                  <option value="Odontopediatria">Atencion para Ninos (Odontopediatria)</option>
+                </select>
+              </div>
+
+              <button type="submit" class="w-full py-4 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-bold text-sm shadow-md shadow-brand-600/20 transition flex items-center justify-center gap-2">
+                <span>Continuar a WhatsApp</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                </svg>
+              </button>
+
+              <div class="flex items-center justify-center gap-2 text-[11px] text-slate-400 pt-1">
+                <svg class="w-3.5 h-3.5 text-emerald-500" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                </svg>
+                <span>Respuesta habitual en menos de 10 minutos</span>
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Features & Benefits Bar -->
+  <section class="border-y border-slate-200 bg-white py-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        <div class="p-3">
+          <div class="w-10 h-10 rounded-full bg-brand-100 text-brand-700 flex items-center justify-center mx-auto mb-2">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+          </div>
+          <h4 class="font-bold text-sm text-slate-900">Especialistas Titulados</h4>
+          <p class="text-xs text-slate-500 mt-1">Medicos cirujanos con postgrados internacionales.</p>
+        </div>
+        <div class="p-3">
+          <div class="w-10 h-10 rounded-full bg-brand-100 text-brand-700 flex items-center justify-center mx-auto mb-2">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+            </svg>
+          </div>
+          <h4 class="font-bold text-sm text-slate-900">Tecnologia Laser</h4>
+          <p class="text-xs text-slate-500 mt-1">Tratamientos indoloros y recuperacion rapida.</p>
+        </div>
+        <div class="p-3">
+          <div class="w-10 h-10 rounded-full bg-brand-100 text-brand-700 flex items-center justify-center mx-auto mb-2">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+          </div>
+          <h4 class="font-bold text-sm text-slate-900">Presupuestos Claros</h4>
+          <p class="text-xs text-slate-500 mt-1">Sin cobros ocultos ni sorpresas en tus consultas.</p>
+        </div>
+        <div class="p-3">
+          <div class="w-10 h-10 rounded-full bg-brand-100 text-brand-700 flex items-center justify-center mx-auto mb-2">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+          </div>
+          <h4 class="font-bold text-sm text-slate-900">Puntualidad Estricta</h4>
+          <p class="text-xs text-slate-500 mt-1">Tu tiempo es valioso, citas sin largas salas de espera.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services / Treatments Section -->
+  <section id="servicios" class="py-20 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-bold text-brand-600 uppercase tracking-wider block mb-2">Especialidades Odontologicas</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">Soluciones Dentales Completas</h2>
+        <p class="text-slate-600 text-base mt-3">Desde tratamientos preventivos hasta rehabilitacion oral avanzada con garantia por escrito.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Card 1 -->
+        <div class="bg-white rounded-2xl p-7 border border-slate-200/80 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-brand-50 text-brand-700 flex items-center justify-center mb-5 font-bold">
+              01
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-2">Limpieza y Profilaxis Ultrasonica</h3>
+            <p class="text-sm text-slate-600 mb-4 leading-relaxed">Eliminacion profunda de placa bacteriana y sarro dental con ultrasonido. Protege tus encias y previene caries.</p>
+            <ul class="text-xs text-slate-500 space-y-2 mb-6">
+              <li class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-brand-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <span>Duracion: 40 minutos</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-brand-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <span>Incluye pulido dental con fluor</span>
+              </li>
+            </ul>
+          </div>
+          <a href="https://wa.me/59170000000?text=Hola%2C%20quisiera%20agendar%20una%20Limpieza%20Dental%20Ultrasonica" target="_blank" rel="noopener" class="w-full py-3 text-center rounded-xl bg-slate-100 hover:bg-brand-600 hover:text-white text-slate-800 text-xs font-bold transition">
+            Agendar Limpieza
+          </a>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-white rounded-2xl p-7 border-2 border-brand-500 shadow-md relative flex flex-col justify-between">
+          <div class="absolute -top-3 right-6 bg-brand-600 text-white text-[10px] font-extrabold px-3 py-1 rounded-full uppercase tracking-wider">
+            Mas Solicitado
+          </div>
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-brand-50 text-brand-700 flex items-center justify-center mb-5 font-bold">
+              02
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-2">Ortodoncia y Brackets</h3>
+            <p class="text-sm text-slate-600 mb-4 leading-relaxed">Alineacion dental estetica y funcional. Disponibles en brackets metalicos clasicos, zafiro estetico y alineadores transparentes.</p>
+            <ul class="text-xs text-slate-500 space-y-2 mb-6">
+              <li class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-brand-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <span>Plan de pagos mensuales flexibles</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-brand-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <span>Diagnostico cefalometrico digital</span>
+              </li>
+            </ul>
+          </div>
+          <a href="https://wa.me/59170000000?text=Hola%2C%20quisiera%20consultar%20por%20tratamiento%20de%20Ortodoncia%20y%20Brackets" target="_blank" rel="noopener" class="w-full py-3 text-center rounded-xl bg-brand-600 text-white hover:bg-brand-700 text-xs font-bold transition">
+            Consultar Ortodoncia
+          </a>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-white rounded-2xl p-7 border border-slate-200/80 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-brand-50 text-brand-700 flex items-center justify-center mb-5 font-bold">
+              03
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-2">Implantes Dentales</h3>
+            <p class="text-sm text-slate-600 mb-4 leading-relaxed">Recupera la estetica y funcion masticatoria permanente con implantes de titanio grado medico y coronas de zirconio de alta resistencia.</p>
+            <ul class="text-xs text-slate-500 space-y-2 mb-6">
+              <li class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-brand-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <span>Garantia clinica de por vida</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-brand-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <span>Cirugia guiada por tomografia 3D</span>
+              </li>
+            </ul>
+          </div>
+          <a href="https://wa.me/59170000000?text=Hola%2C%20quisiera%20informacion%20sobre%20Implantes%20Dentales" target="_blank" rel="noopener" class="w-full py-3 text-center rounded-xl bg-slate-100 hover:bg-brand-600 hover:text-white text-slate-800 text-xs font-bold transition">
+            Consultar Implantes
+          </a>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="bg-white rounded-2xl p-7 border border-slate-200/80 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-brand-50 text-brand-700 flex items-center justify-center mb-5 font-bold">
+              04
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-2">Diseno de Sonrisa y Carillas</h3>
+            <p class="text-sm text-slate-600 mb-4 leading-relaxed">Carillas de porcelana o resina estratificada de alta estetica para corregir forma, tamano y color de tus piezas dentales.</p>
+            <ul class="text-xs text-slate-500 space-y-2 mb-6">
+              <li class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-brand-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <span>Simulacion fotografica previa</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-brand-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <span>Resultados de aspecto 100% natural</span>
+              </li>
+            </ul>
+          </div>
+          <a href="https://wa.me/59170000000?text=Hola%2C%20quisiera%20solicitar%20presupuesto%20para%20Diseno%20de%20Sonrisa" target="_blank" rel="noopener" class="w-full py-3 text-center rounded-xl bg-slate-100 hover:bg-brand-600 hover:text-white text-slate-800 text-xs font-bold transition">
+            Consultar Carillas
+          </a>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="bg-white rounded-2xl p-7 border border-slate-200/80 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-brand-50 text-brand-700 flex items-center justify-center mb-5 font-bold">
+              05
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-2">Blanqueamiento Dental Laser</h3>
+            <p class="text-sm text-slate-600 mb-4 leading-relaxed">Aclara hasta 4 tonos en una sola sesion clinica con tecnologia LED frio que minimiza sensiblemente las molestias posteriores.</p>
+            <ul class="text-xs text-slate-500 space-y-2 mb-6">
+              <li class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-brand-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <span>Sesion clinica de 60 minutos</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-brand-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <span>Gel desensibilizante incluido</span>
+              </li>
+            </ul>
+          </div>
+          <a href="https://wa.me/59170000000?text=Hola%2C%20quisiera%20agendar%20un%20Blanqueamiento%20Dental" target="_blank" rel="noopener" class="w-full py-3 text-center rounded-xl bg-slate-100 hover:bg-brand-600 hover:text-white text-slate-800 text-xs font-bold transition">
+            Agendar Blanqueamiento
+          </a>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="bg-white rounded-2xl p-7 border border-rose-200 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-rose-50 text-rose-700 flex items-center justify-center mb-5 font-bold">
+              06
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-2">Urgencias Odontologicas</h3>
+            <p class="text-sm text-slate-600 mb-4 leading-relaxed">Atencion prioritaria para alivio inmediato de dolor agudo, piezas fracturadas, pulpitis o desprendimiento de coronas.</p>
+            <ul class="text-xs text-slate-500 space-y-2 mb-6">
+              <li class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-rose-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <span>Atencion en el mismo dia garantizada</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-rose-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <span>Control inmediato de inflamacion y dolor</span>
+              </li>
+            </ul>
+          </div>
+          <a href="https://wa.me/59170000000?text=Hola%2C%20tengo%20una%20Urgencia%20Dental%20y%20necesito%20atencion%20prioritaria" target="_blank" rel="noopener" class="w-full py-3 text-center rounded-xl bg-rose-600 hover:bg-rose-700 text-white text-xs font-bold transition">
+            Pedir Atencion Urgente
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us / Guarantees -->
+  <section id="ventajas" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        
+        <div class="space-y-6">
+          <span class="text-xs font-bold text-brand-600 uppercase tracking-wider block">Compromiso Clinico</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight">
+            Por Que Cientos de Familias Confian en Clinica San Martin
+          </h2>
+          <p class="text-slate-600 text-base leading-relaxed">
+            Sabemos que visitar al dentista puede generar ansiedad. Por eso, hemos disenado un entorno calido y un protocolo clinico centrado en el confort total del paciente.
+          </p>
+
+          <div class="space-y-4 pt-2">
+            <div class="flex items-start gap-4">
+              <div class="w-8 h-8 rounded-lg bg-brand-100 text-brand-700 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              </div>
+              <div>
+                <h4 class="font-bold text-slate-900 text-base">Esterilizacion Quirurgica Grado Hospitalario</h4>
+                <p class="text-sm text-slate-500 mt-0.5">Autoclaves de clase B y material sellado frente al paciente en cada consulta.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-8 h-8 rounded-lg bg-brand-100 text-brand-700 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              </div>
+              <div>
+                <h4 class="font-bold text-slate-900 text-base">Financiamiento Directo sin Intereses</h4>
+                <p class="text-sm text-slate-500 mt-0.5">Planes comodos para ortodoncia e implantes sin tramites bancarios engorrosos.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-8 h-8 rounded-lg bg-brand-100 text-brand-700 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              </div>
+              <div>
+                <h4 class="font-bold text-slate-900 text-base">Seguimiento Post-Tratamiento</h4>
+                <p class="text-sm text-slate-500 mt-0.5">Monitoreo continuo por WhatsApp y revisiones de control periodicas incluidas.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Metric Highlight Box -->
+        <div class="bg-gradient-to-br from-brand-900 to-slate-900 rounded-3xl p-8 sm:p-10 text-white relative shadow-xl">
+          <span class="inline-block px-3 py-1 rounded-full bg-brand-800/80 text-brand-300 text-xs font-bold uppercase tracking-wider mb-6">
+            Garantia Escrita
+          </span>
+          <h3 class="text-2xl sm:text-3xl font-bold mb-4 leading-tight">
+            Transparencia Clinica y Resultados Comprobables
+          </h3>
+          <p class="text-slate-300 text-sm mb-8 leading-relaxed">
+            Cada procedimiento cuenta con expediente digital y protocolo respaldado. Si tienes alguna molestia posterior a tu cita, te atendemos de forma prioritaria sin costo de consulta.
+          </p>
+
+          <div class="border-t border-slate-700/80 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div>
+              <p class="text-3xl font-extrabold text-emerald-400">100%</p>
+              <p class="text-xs text-slate-400">Compromiso de Satisfaccion</p>
+            </div>
+            <a href="#contacto" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-brand-500 hover:bg-brand-600 text-white font-bold text-xs uppercase px-6 py-3.5 rounded-xl transition">
+              <span>Agendar Valoracion</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonios" class="py-20 bg-slate-50 border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-xs font-bold text-brand-600 uppercase tracking-wider block mb-2">Historias Reales</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">Lo Que Dicen Nuestros Pacientes</h2>
+        <p class="text-slate-600 text-base mt-3">Opiniones de personas que transformaron su salud bucal con nosotros.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm space-y-4">
+          <div class="flex items-center gap-1 text-amber-400">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+          </div>
+          <p class="text-xs sm:text-sm text-slate-700 leading-relaxed italic">
+            "Tenia panico al dentista por malas experiencias pasadas. En San Martin me colocaron dos implantes y la atencion fue impecable, no senti dolor alguno y el seguimiento fue diario."
+          </p>
+          <div class="pt-2 border-t border-slate-100 flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-slate-200 flex items-center justify-center font-bold text-xs text-slate-700">
+              MV
+            </div>
+            <div>
+              <p class="text-xs font-bold text-slate-900">Mariana Vargas</p>
+              <p class="text-[11px] text-slate-500">Tratamiento de Implantes</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm space-y-4">
+          <div class="flex items-center gap-1 text-amber-400">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+          </div>
+          <p class="text-xs sm:text-sm text-slate-700 leading-relaxed italic">
+            "Excelente trato y puntualidad. Mis brackets de zafiro quedaron muy esteticos y las mensualidades fueron super accesibles. Muy recomendados."
+          </p>
+          <div class="pt-2 border-t border-slate-100 flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-slate-200 flex items-center justify-center font-bold text-xs text-slate-700">
+              RC
+            </div>
+            <div>
+              <p class="text-xs font-bold text-slate-900">Rodrigo Calvimontes</p>
+              <p class="text-[11px] text-slate-500">Ortodoncia Estetica</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm space-y-4">
+          <div class="flex items-center gap-1 text-amber-400">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+          </div>
+          <p class="text-xs sm:text-sm text-slate-700 leading-relaxed italic">
+            "Fui de emergencia un sabado por un dolor insoportable y me atendieron al instante. Profesionales muy humanos y las instalaciones son modernas e impecables."
+          </p>
+          <div class="pt-2 border-t border-slate-100 flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-slate-200 flex items-center justify-center font-bold text-xs text-slate-700">
+              LR
+            </div>
+            <div>
+              <p class="text-xs font-bold text-slate-900">Lorena Ramos</p>
+              <p class="text-[11px] text-slate-500">Urgencia Odontologica</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Location & Hours Section -->
+  <section id="ubicacion" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-5 space-y-6">
+          <span class="text-xs font-bold text-brand-600 uppercase tracking-wider block">Visitanos</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight">
+            Ubicacion Centrica y Horarios Flexibles
+          </h2>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Nuestras instalaciones cuentan con estacionamiento propio, facil acceso y conexion de transporte directo.
+          </p>
+
+          <div class="space-y-4 pt-2">
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-xl bg-slate-100 text-slate-700 flex items-center justify-center flex-shrink-0">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+              </div>
+              <div>
+                <h4 class="font-bold text-slate-900 text-sm">Direccion</h4>
+                <p class="text-xs text-slate-600 mt-0.5">Av. Principal No. 450, Edificio Medico Torre Norte, Piso 3</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-xl bg-slate-100 text-slate-700 flex items-center justify-center flex-shrink-0">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+              </div>
+              <div>
+                <h4 class="font-bold text-slate-900 text-sm">Horario de Atencion</h4>
+                <p class="text-xs text-slate-600 mt-0.5">Lunes a Viernes: 08:30 - 20:00</p>
+                <p class="text-xs text-slate-600">Sabados: 09:00 - 15:00</p>
+                <p class="text-xs text-rose-600 font-semibold mt-0.5">Domingos y Feriados: Urgencias activas por WhatsApp</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-xl bg-slate-100 text-slate-700 flex items-center justify-center flex-shrink-0">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+              </div>
+              <div>
+                <h4 class="font-bold text-slate-900 text-sm">Lineas de Contacto</h4>
+                <p class="text-xs text-slate-600 mt-0.5">Telefono Fijo: (01) 450-8920</p>
+                <p class="text-xs text-brand-600 font-semibold">WhatsApp Citas: +591 70000000</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Google Maps Styled Container -->
+        <div class="lg:col-span-7">
+          <div class="rounded-3xl overflow-hidden border border-slate-200 shadow-md bg-slate-100 h-80 sm:h-96 flex flex-col items-center justify-center relative">
+            <div class="text-center p-6 space-y-3">
+              <div class="w-12 h-12 rounded-full bg-brand-600 text-white flex items-center justify-center mx-auto shadow-md">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path></svg>
+              </div>
+              <h4 class="font-bold text-slate-800 text-base">Clinica Odontologica San Martin</h4>
+              <p class="text-xs text-slate-500 max-w-sm">Presiona el boton para abrir la ruta directa en Google Maps en tu dispositivo movil.</p>
+              <a href="https://maps.google.com" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold px-5 py-2.5 rounded-xl transition">
+                <span>Abrir en Google Maps</span>
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section id="contacto" class="py-16 bg-brand-700 text-white text-center">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+      <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">
+        Comienza a Sonreir con Confianza Hoy Mismo
+      </h2>
+      <p class="text-brand-100 text-base max-w-2xl mx-auto">
+        Consulta inmediata sin compromiso. Nuestro equipo medico evaluara tu caso y te presentara un presupuesto detallado a tu medida.
+      </p>
+      <div class="pt-2 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="https://wa.me/59170000000?text=Hola%2C%20quisiera%20agendar%20una%20cita%20de%20diagnostico" target="_blank" rel="noopener" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-white text-brand-900 hover:bg-brand-50 font-bold px-8 py-4 rounded-xl text-sm shadow-lg transition">
+          <svg class="w-5 h-5 fill-emerald-600" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+          <span>Escribir por WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6 text-center sm:text-left">
+      <div>
+        <p class="font-bold text-white text-sm">Clinica Dental San Martin</p>
+        <p class="mt-1 text-slate-500">Registro Medico Sanitario No. 89412-MS. Todos los derechos reservados.</p>
+      </div>
+      <div class="flex items-center gap-6">
+        <a href="#servicios" class="hover:text-white transition">Tratamientos</a>
+        <a href="#ubicacion" class="hover:text-white transition">Ubicacion</a>
+        <a href="https://wa.me/59170000000" class="text-brand-400 hover:text-brand-300 font-semibold transition">WhatsApp Oficial</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Action Button with Pulse -->
+  <aside aria-label="Contacto rapido WhatsApp" class="fixed bottom-6 right-6 z-50">
+    <a href="https://wa.me/59170000000?text=Hola%2C%20quisiera%20agendar%20una%20cita%20de%20valoracion" target="_blank" rel="noopener" aria-label="Escribenos por WhatsApp" class="flex items-center gap-3 bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-4 py-3.5 rounded-full shadow-2xl pulse-btn transition transform hover:scale-105">
+      <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+      </svg>
+      <span class="hidden sm:inline text-xs font-bold tracking-wide">Agendar Cita</span>
+    </a>
+  </aside>
+
+  <!-- Interactive Script for Form to WhatsApp conversion -->
+  <script>
+    function submitLeadForm() {
+      const name = document.getElementById('leadName').value.trim();
+      const phone = document.getElementById('leadPhone').value.trim();
+      const service = document.getElementById('leadService').value;
+
+      if (!name || !phone) {
+        alert('Por favor completa tu nombre y telefono.');
+        return;
+      }
+
+      const text = encodeURIComponent('Hola Clinica San Martin, mi nombre es ' + name + ' (Tel: ' + phone + '). Quisiera agendar una valoracion para el servicio de ' + service + '.');
+      const whatsappUrl = 'https://wa.me/59170000000?text=' + text;
+
+      window.open(whatsappUrl, '_blank');
+    }
+  </script>
+</body>
+</html>
